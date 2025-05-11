@@ -1,0 +1,25 @@
+/* App.css - Global styles for DonateCare 🌟 */
+.app-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f9fafb;
+  padding-top: 60px; /* Space for fixed navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Ensure content respects max-width */
+.app-container > * {
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    padding-top: 60px; /* Consistent navbar spacing */
+  }
+}

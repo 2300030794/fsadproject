@@ -1,0 +1,110 @@
+/* AboutUsPage.css */
+.about-us-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #f9fafb;
+}
+
+.about-us-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-us-content h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2e8b57;
+  margin-bottom: 40px;
+}
+
+.about-us-content h2 {
+  font-size: 1.8rem;
+  color: #2e8b57;
+  margin: 30px 0 15px;
+}
+
+.about-us-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-us-content ul {
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.about-us-content li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.value-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.value-card h3 {
+  color: #2e8b57;
+  margin-bottom: 15px;
+}
+
+.get-involved-section {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #16a34a;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 60px 15px;
+  }
+
+  .about-us-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-us-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}

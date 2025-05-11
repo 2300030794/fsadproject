@@ -1,0 +1,192 @@
+/* HomePage.css - Centered layout for DonateCare 🌟 */
+body {
+  margin: 0; /* Reset browser default margin */
+}
+
+.home-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 80px; /* Space for fixed navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content */
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; /* Center container */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.about-section,
+.impact-section,
+.projects-section,
+.donation-impact-section,
+.testimonials-section {
+  width: 100vw;
+  padding: 80px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Center section content */
+}
+
+.about-section {
+  background-color: white;
+}
+
+.impact-section,
+.donation-impact-section {
+  background-color: #f5f7fa;
+}
+
+.about-section h2,
+.impact-section h2,
+.projects-section h2,
+.donation-impact-section h2,
+.testimonials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2e8b57;
+}
+
+.about-section p,
+.impact-section p,
+.donation-impact-section p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.impact-grid,
+.projects-list,
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.impact-card,
+.project-card,
+.testimonial-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.impact-card:hover,
+.project-card:hover,
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.impact-card h3,
+.project-card h3 {
+  color: #2e8b57;
+  margin-bottom: 15px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.testimonial-card .author {
+  font-weight: 600;
+  color: #2e8b57;
+  font-style: normal;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+}
+
+.btn-secondary {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #4338ca;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .about-section h2,
+  .impact-section h2,
+  .projects-section h2,
+  .donation-impact-section h2,
+  .testimonials-section h2 {
+    font-size: 2rem;
+  }
+
+  .impact-grid,
+  .projects-list,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
